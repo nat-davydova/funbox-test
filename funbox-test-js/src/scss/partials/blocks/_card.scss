@@ -1,0 +1,49 @@
+$card-border-offset: 4px;
+$card-border-radius: 12px;
+
+.card {
+	position: relative;
+
+	background-color: $bg-color--primary;
+	border-radius: $card-border-radius;
+
+	cursor: pointer;
+}
+
+.card--angled {
+	background-color: transparent;
+	border: none;
+
+	&:before,
+	&:after {
+		display: block;
+
+		content: '';
+	}
+
+	&:before {
+		@include position-absolute($top: 0, $left: 0);
+
+		height: 100%;
+		width: 100%;
+
+		background:
+						linear-gradient(135deg, transparent 32px, $bg-color--accent-1 0),
+						0 0,
+						no-repeat;
+		border-radius: inherit;
+	}
+
+	&:after {
+		@include position-absolute($top: $card-border-offset, $left: $card-border-offset);
+
+		height: calc(100% - 2 * #{$card-border-offset});
+		width: calc(100% - 2 * #{$card-border-offset});
+
+		background:
+						linear-gradient(135deg, transparent 30px, $bg-color--primary 0),
+						0 0,
+						no-repeat;
+		border-radius: $card-border-radius * .75;
+	}
+}
