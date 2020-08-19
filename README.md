@@ -102,8 +102,8 @@
 
 Из последних проектов у меня есть:
 
-[Taskify App](https://github.com/nat-davydova/taskify) - to-do list на JS, который я регулярно и методично расширяю, обновляю и улучшаю
-[Recipery App (HTML/CSS/JS)](https://github.com/nat-davydova/recipery) - JS-приложение, дает возможность искать рецепты по ключевым словам;
+* [Taskify App](https://github.com/nat-davydova/taskify) - to-do list на JS, который я регулярно и методично расширяю, обновляю и улучшаю
+* [Recipery App (HTML/CSS/JS)](https://github.com/nat-davydova/recipery) - JS-приложение, дает возможность искать рецепты по ключевым словам;
 
 Мои небольшие эксперименты с CSS/JS/анимациями [можно увидеть на codepen](https://codepen.io/nat-davydova/), где у меня 55+ тысяч просмотров, и я дважды попадала в их рассылку;
 
