@@ -8,6 +8,7 @@ $card-border-radius: 12px;
 	border-radius: $card-border-radius;
 
 	cursor: pointer;
+	z-index: 1;
 }
 
 .card--angled {
@@ -27,11 +28,15 @@ $card-border-radius: 12px;
 		height: 100%;
 		width: 100%;
 
+		transform: translateZ(1px);
+
 		background:
 						linear-gradient(135deg, transparent 32px, $bg-color--accent-1 0),
 						0 0,
 						no-repeat;
 		border-radius: inherit;
+
+		z-index: -2;
 	}
 
 	&:after {
@@ -45,5 +50,6 @@ $card-border-radius: 12px;
 						0 0,
 						no-repeat;
 		border-radius: $card-border-radius * .75;
+		z-index: -1;
 	}
 }
