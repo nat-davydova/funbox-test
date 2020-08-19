@@ -1,5 +1,8 @@
 .page {
-	background-image: url("../assets/img/page-bg.jpg");
-	background-repeat: repeat;
-	background-position: 0 0;
+	background-image:
+					linear-gradient(to top, $bg-color--dark, rgba($bg-color--dark, 0.01), $bg-color--dark),
+					url("../assets/img/page-bg.jpg");
+	background-repeat: no-repeat, repeat;
+	background-position: 0 0, 0 0;
+	background-size: 100% 100%, auto;
 }
