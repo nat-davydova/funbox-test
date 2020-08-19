@@ -1,4 +1,4 @@
-section.feed-types.section
+section.feed-packs.section
     .container
         .section__inner
 
@@ -7,25 +7,31 @@ section.feed-types.section
                 h1.section__title Ты сегодня покормил кота?
 
             //section content
-            .section__content.feed-types__content
+            .section__content.feed-packs__content
 
                 // single feed type
-                article.feed-type.feed-types__elem
+                .feed-pack.feed-packs__elem
 
                     //feed type description card
-                    .feed-type__card.card.card--angled
+                    .feed-pack__card.card.card--angled
+                        .feed-pack__content
 
-                        .feed-type__suptitle
-                            p Сказочное заморское яство
+                            .feed-pack__suptitle
+                                p Сказочное заморское яство
 
-                        h2.feed-type__title Нямушка
-                            span.feed-type__subtitle с фуа-гра
+                            h2.feed-pack__title Нямушка
+                                span.feed-type__subtitle с фуа-гра
 
-                        ul.feed-type__features
-                            li.feed-type__feature
-                                strong 10
-                                | порций
-                            li.feed-type__feature мышь в подарок
+                            ul.feed-pack__features
+                                li.feed-type__feature
+                                    strong 10
+                                    | порций
+                                li.feed-type__feature мышь в подарок
+
+                            .feed-pack__weight
+                                span.feed-pack__weight-kg 0
+                                span.feed-pack__weight-g 5
+                                span.feed-pack__weight-units кг
 
                     //feed type order info
                     .feed-type__info
