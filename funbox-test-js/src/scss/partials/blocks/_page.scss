@@ -1,4 +1,9 @@
 .page {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+
 	background-image:
 					linear-gradient(to top, $bg-color--dark, rgba($bg-color--dark, 0.01), $bg-color--dark),
 					url("../assets/img/page-bg.jpg");
