@@ -12,22 +12,54 @@ $card-accent--default-hover: lighten($bg-color--accent-1, 5%);
 						0 0,
 						no-repeat;
 	}
+}
 
-	&:hover {
+// different pack state styles
 
-		&:before {
-			background:
-							linear-gradient(135deg, transparent 32px, $card-accent--default-hover 0),
-							0 0,
-							no-repeat;
-		}
+.feed-pack__card:hover {
 
-		.feed-pack__weight {
-			background-color: $card-accent--default-hover;
-		}
+	&:before {
+		background:
+						linear-gradient(135deg, transparent 32px, $card-accent--default-hover 0),
+						0 0,
+						no-repeat;
+	}
+
+	.feed-pack__weight {
+		background-color: $card-accent--default-hover;
 	}
 }
 
+.feed-pack[data-pack-disabled="disabled"] {
+
+	.feed-pack__card {
+		cursor: not-allowed;
+
+		&:before {
+			background:
+							linear-gradient(135deg, transparent 32px, $bg-color--disabled 0),
+							0 0,
+							no-repeat;
+		}
+	}
+
+	.feed-pack__weight {
+		background-color: $bg-color--disabled;
+	}
+
+	.feed-pack__img {
+		opacity: .5;
+	}
+
+	.feed-pack__suptitle,
+	.feed-pack__title,
+	.feed-pack__subtitle,
+	.feed-pack__features {
+		color: $font-color--disabled;
+	}
+}
+
+// pack inner items styles
 .feed-pack__content {
 	padding: 20px 10px 10px 47px;
 
