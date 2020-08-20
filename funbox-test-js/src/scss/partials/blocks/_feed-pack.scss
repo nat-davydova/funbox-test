@@ -33,6 +33,41 @@
 	}
 }
 
+.feed-pack__subtitle {
+	margin: 0 0 0;
+
+	font: {
+		size: $font-size--md-2;
+		weight: $font-weight--bold;
+	}
+}
+
+.feed-pack__type {
+
+	&:before,
+	&:after {
+		content: ' ';
+	}
+}
+
+.feed-pack__features {
+	padding: 0;
+
+	color: $font-color--secondary;
+
+	list-style-type: none;
+}
+
+.feed-pack__feature {
+
+	strong {
+
+		&:after {
+			content: ' ';
+		}
+	}
+}
+
 .feed-pack__img {
 	@include position-absolute($bottom: 0, $left: 0);
 
