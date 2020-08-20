@@ -1,3 +1,5 @@
+import { pickFeedPack } from './modules/feedPack'
+
 import { PATH } from './path'
 
 (function () {
@@ -11,7 +13,9 @@ import { PATH } from './path'
       target.closest(PATH.feedPack.card) ||
       target.closest(PATH.feedPack.orderBtn)
     ) {
-      console.log('pick!')
+      const feedPackItem = target.closest(PATH.feedPack.pack)
+
+      pickFeedPack(feedPackItem)
     }
   })
 })()
