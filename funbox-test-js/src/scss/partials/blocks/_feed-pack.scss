@@ -1,4 +1,5 @@
 $card-accent--default: $bg-color--accent-1;
+$card-accent--default-hover: lighten($bg-color--accent-1, 5%);
 
 .feed-pack__card {
 	position: relative;
@@ -10,6 +11,20 @@ $card-accent--default: $bg-color--accent-1;
 						linear-gradient(135deg, transparent 32px, $card-accent--default 0),
 						0 0,
 						no-repeat;
+	}
+
+	&:hover {
+
+		&:before {
+			background:
+							linear-gradient(135deg, transparent 32px, $card-accent--default-hover 0),
+							0 0,
+							no-repeat;
+		}
+
+		.feed-pack__weight {
+			background-color: $card-accent--default-hover;
+		}
 	}
 }
 
@@ -95,6 +110,7 @@ $card-accent--default: $bg-color--accent-1;
 
 .feed-pack__weight {
 	@include position-absolute($bottom: 10px, $right: 10px);
+	@include transition-mix();
 
 	display: flex;
 	align-items: center;
