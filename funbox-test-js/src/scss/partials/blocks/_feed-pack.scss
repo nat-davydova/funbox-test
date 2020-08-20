@@ -47,6 +47,12 @@ $card-accent--picked-hover: lighten($bg-color--accent-2, 5%);
 	.feed-pack__weight {
 		background-color: $card-accent--picked;
 	}
+
+	&:hover {
+		.feed-pack__weight {
+			background-color: $card-accent--picked-hover;
+		}
+	}
 }
 
 // pack inner items styles
@@ -63,12 +69,6 @@ $card-accent--picked-hover: lighten($bg-color--accent-2, 5%);
 	}
 
 	&:hover {
-
-		&:before {
-			background: linear-gradient(135deg, transparent 32px, $card-accent--default-hover 0),
-			0 0,
-			no-repeat;
-		}
 
 		.feed-pack__weight {
 			background-color: $card-accent--default-hover;
