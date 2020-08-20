@@ -33,6 +33,23 @@ section.feed-packs.section
                                 span.feed-pack__weight-g 5
                                 span.feed-pack__weight-units кг
 
-                    //feed type order info
-                    .feed-type__info
+                    //feed pack order info
+                    .feed-pack__info
 
+                        //is visible by default
+                        .feed-pack__order-cta
+                            p
+                                | Чего сидишь? Порадуй котэ,
+                                button.order-cta-btn.btn.btn--inline(type="button") купи
+                                | .
+
+                        //is visible if pack is picked
+                        .feed-pack__picked-info
+                            p Печень утки разварная с артишоками.
+
+                        //is visible if pack is disabled
+                        .feed-pack__disabled-info
+                            p
+                                | Печалька, с
+                                span.feed-pack__type фуа-гра
+                                | закончился.
