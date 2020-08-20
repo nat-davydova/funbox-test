@@ -230,6 +230,9 @@ $card-accent--picked-hover: lighten($bg-color--accent-2, 7%);
 }
 
 .feed-pack__order-btn {
+	padding-top: 0;
+	padding-bottom: 0;
+
 	color: $card-accent--default;
 
 	border: none;
