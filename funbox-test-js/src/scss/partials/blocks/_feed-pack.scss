@@ -24,6 +24,15 @@
 	color: $font-color--secondary;
 }
 
+.feed-pack__title {
+	margin: 5px 0 0;
+
+	font: {
+		size: $font-size--xxl;
+		weight: $font-weight--bold;
+	}
+}
+
 .feed-pack__img {
 	@include position-absolute($bottom: 0, $left: 0);
 
@@ -39,3 +48,4 @@
 		max-width: 120%;
 	}
 }
+
