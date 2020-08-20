@@ -234,4 +234,8 @@ $card-accent--picked-hover: lighten($bg-color--accent-2, 7%);
 
 	border: none;
 	background-color: transparent;
+
+	span {
+		border-bottom: 1px dashed currentColor;
+	}
 }
