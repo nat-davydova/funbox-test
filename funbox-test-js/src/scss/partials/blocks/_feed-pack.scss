@@ -1,8 +1,8 @@
 $card-accent--default: $bg-color--accent-1;
-$card-accent--default-hover: lighten($bg-color--accent-1, 5%);
+$card-accent--default-hover: lighten($bg-color--accent-1, 7%);
 
 $card-accent--picked: $bg-color--accent-2;
-$card-accent--picked-hover: lighten($bg-color--accent-2, 5%);
+$card-accent--picked-hover: lighten($bg-color--accent-2, 7%);
 
 // different pack state styles
 .feed-pack[data-pack-disabled="disabled"] {
@@ -31,6 +31,12 @@ $card-accent--picked-hover: lighten($bg-color--accent-2, 5%);
 	.feed-pack__subtitle,
 	.feed-pack__features {
 		color: $font-color--disabled;
+	}
+
+	&:hover {
+		.feed-pack__weight {
+			background-color: $bg-color--disabled;
+		}
 	}
 }
 
