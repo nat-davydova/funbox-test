@@ -1,35 +1,10 @@
 $card-accent--default: $bg-color--accent-1;
 $card-accent--default-hover: lighten($bg-color--accent-1, 5%);
 
-.feed-pack__card {
-	position: relative;
-
-	min-height: 480px;
-
-	&:before {
-		background:
-						linear-gradient(135deg, transparent 32px, $card-accent--default 0),
-						0 0,
-						no-repeat;
-	}
-}
+$card-accent--picked: $bg-color--accent-2;
+$card-accent--picked-hover: lighten($bg-color--accent-2, 5%);
 
 // different pack state styles
-
-.feed-pack__card:hover {
-
-	&:before {
-		background:
-						linear-gradient(135deg, transparent 32px, $card-accent--default-hover 0),
-						0 0,
-						no-repeat;
-	}
-
-	.feed-pack__weight {
-		background-color: $card-accent--default-hover;
-	}
-}
-
 .feed-pack[data-pack-disabled="disabled"] {
 
 	.feed-pack__card {
@@ -59,7 +34,48 @@ $card-accent--default-hover: lighten($bg-color--accent-1, 5%);
 	}
 }
 
+.feed-pack[data-pack-picked="picked"] {
+
+	.feed-pack__card {
+		&:before {
+			background: linear-gradient(135deg, transparent 32px, $card-accent--picked 0),
+			0 0,
+			no-repeat;
+		}
+	}
+
+	.feed-pack__weight {
+		background-color: $card-accent--picked;
+	}
+}
+
 // pack inner items styles
+.feed-pack__card {
+	position: relative;
+
+	min-height: 480px;
+
+	&:before {
+		background:
+						linear-gradient(135deg, transparent 32px, $card-accent--default 0),
+						0 0,
+						no-repeat;
+	}
+
+	&:hover {
+
+		&:before {
+			background: linear-gradient(135deg, transparent 32px, $card-accent--default-hover 0),
+			0 0,
+			no-repeat;
+		}
+
+		.feed-pack__weight {
+			background-color: $card-accent--default-hover;
+		}
+	}
+}
+
 .feed-pack__content {
 	padding: 20px 10px 10px 47px;
 
