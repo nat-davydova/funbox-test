@@ -1,0 +1,11 @@
+.feed-packs__content {
+	display: flex;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.feed-packs__elem {
+	width: 100%;
+	max-width: 320px;
+	margin: 0 20px 20px;
+}
