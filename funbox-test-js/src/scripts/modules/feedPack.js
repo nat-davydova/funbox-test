@@ -1,3 +1,5 @@
+import { hideElem, showElem } from '../utils'
+
 import { PATH } from '../path'
 
 const PACK_DISABLED_VAL = 'disabled'
@@ -19,11 +21,11 @@ export const pickFeedPack = pack => {
 
   if (packPickedVal !== PACK_PICKED_VAL) {
     pack.dataset.packPicked = PACK_PICKED_VAL
-    packCTAtext.classList.add('js-hidden')
-    packPickedtext.classList.remove('js-hidden')
+    hideElem(packCTAtext)
+    showElem(packPickedtext)
   } else {
     pack.dataset.packPicked = PACK_UNPICKED_VAL
-    packCTAtext.classList.remove('js-hidden')
-    packPickedtext.classList.add('js-hidden')
+    hideElem(packPickedtext)
+    showElem(packCTAtext)
   }
 }
