@@ -1,9 +1,5 @@
 .page {
 	display: flex;
-	align-items: center;
-	flex-wrap: wrap;
-
-	height: 99vh; //work around for IE11, min-height will still be 100vh
 
 	background-image:
 					linear-gradient(to top, $bg-color--dark, rgba($bg-color--dark, 0.01), $bg-color--dark),
@@ -11,4 +7,13 @@
 	background-repeat: no-repeat, repeat;
 	background-position: 0 0, 0 0;
 	background-size: 100% 100%, auto;
+}
+
+.page__inner {
+	display: flex;
+	align-items: center;
+	flex-wrap: wrap;
+
+	width: 100%;
+	min-height: 100vh; // IE11 workaround
 }
