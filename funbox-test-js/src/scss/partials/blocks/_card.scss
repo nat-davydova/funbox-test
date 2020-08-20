@@ -28,12 +28,6 @@ $card-bg-color: $bg-color--primary;
 		height: 100%;
 		width: 100%;
 
-		transform: translateZ(1px);
-
-		background:
-						linear-gradient(135deg, transparent 32px, $bg-color--accent-1 0),
-						0 0,
-						no-repeat;
 		border-radius: inherit;
 
 		z-index: -2;

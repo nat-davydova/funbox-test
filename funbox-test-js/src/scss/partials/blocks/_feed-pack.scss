@@ -2,6 +2,13 @@
 	position: relative;
 
 	min-height: 480px;
+
+	&:before {
+		background:
+						linear-gradient(135deg, transparent 32px, $bg-color--accent-1 0),
+						0 0,
+						no-repeat;
+	}
 }
 
 .feed-pack__content {
@@ -82,5 +89,9 @@
 		width: auto;
 		max-width: 120%;
 	}
+}
+
+.feed-pack__weight {
+
 }
 
