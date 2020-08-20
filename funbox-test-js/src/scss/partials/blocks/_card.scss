@@ -1,10 +1,11 @@
 $card-border-offset: 4px;
 $card-border-radius: 12px;
+$card-bg-color: $bg-color--primary;
 
 .card {
 	position: relative;
 
-	background-color: $bg-color--primary;
+	background-color: $card-bg-color;
 	border-radius: $card-border-radius;
 
 	cursor: pointer;
@@ -15,8 +16,7 @@ $card-border-radius: 12px;
 	background-color: transparent;
 	border: none;
 
-	&:before,
-	&:after {
+	&:before {
 		display: block;
 
 		content: '';
@@ -38,18 +38,20 @@ $card-border-radius: 12px;
 
 		z-index: -2;
 	}
+}
 
-	&:after {
-		@include position-absolute($top: $card-border-offset, $left: $card-border-offset);
+.card__inner--angled {
+	@include position-absolute($top: $card-border-offset, $left: $card-border-offset);
 
-		height: calc(100% - 2 * #{$card-border-offset});
-		width: calc(100% - 2 * #{$card-border-offset});
+	height: calc(100% - 2 * #{$card-border-offset});
+	width: calc(100% - 2 * #{$card-border-offset});
 
-		background:
-						linear-gradient(135deg, transparent 30px, $bg-color--primary 0),
-						0 0,
-						no-repeat;
-		border-radius: $card-border-radius * .75;
-		z-index: -1;
-	}
+	background:
+					linear-gradient(135deg, transparent 30px, $card-bg-color 0),
+					0 0,
+					no-repeat;
+	border-radius: $card-border-radius * .75;
+
+	overflow: hidden;
+	z-index: -1;
 }
