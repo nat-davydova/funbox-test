@@ -1,3 +1,5 @@
+$card-accent--default: $bg-color--accent-1;
+
 .feed-pack__card {
 	position: relative;
 
@@ -5,7 +7,7 @@
 
 	&:before {
 		background:
-						linear-gradient(135deg, transparent 32px, $bg-color--accent-1 0),
+						linear-gradient(135deg, transparent 32px, $card-accent--default 0),
 						0 0,
 						no-repeat;
 	}
@@ -92,6 +94,47 @@
 }
 
 .feed-pack__weight {
+	@include position-absolute($bottom: 10px, $right: 10px);
 
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	width: 80px;
+	height: 80px;
+
+	color: $font-color--light;
+	text-align: center;
+
+	background-color: $card-accent--default;
+	border-radius: 50%;
+
+	box-sizing: border-box;
+}
+
+.feed-pack__weight-kg,
+.feed-pack__weight-g {
+	margin-bottom: -19px;
+
+	font: {
+		size: $font-size--xl-2;
+	}
+	line-height: 1;
+}
+
+.feed-pack__weight-g {
+
+	&:before {
+		content: ',';
+	}
+}
+
+.feed-pack__weight-units {
+	width: 100%;
+
+	font: {
+		size: $font-size--md-2 * .95;
+	}
+	line-height: 1;
 }
 
