@@ -138,3 +138,30 @@ $card-accent--default: $bg-color--accent-1;
 	line-height: 1;
 }
 
+.feed-pack__order-cta,
+.feed-pack__picked-info,
+.feed-pack__disabled-info {
+	font: {
+		size: $font-size--xs;
+	}
+
+	p {
+		text-shadow: 0 1px 0 rgba(0,0,0,1);
+	}
+}
+
+.feed-pack__order-cta,
+.feed-pack__picked-info {
+	color: $font-color--light;
+}
+
+.feed-pack__disabled-info {
+	color: $font-color--accent-2;
+}
+
+.feed-pack__order-btn {
+	color: $card-accent--default;
+
+	border: none;
+	background-color: transparent;
+}
