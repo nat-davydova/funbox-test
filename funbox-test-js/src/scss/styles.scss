@@ -7,6 +7,9 @@
 @import "partials/setup/mixins";
 @import "partials/setup/global-styles";
 
+// *** HELPERS IMPORTS
+@import "partials/helpers/js-hidden";
+
 // *** BLOCKS IMPORTS
 @import "partials/blocks/card";
 @import "partials/blocks/container";
