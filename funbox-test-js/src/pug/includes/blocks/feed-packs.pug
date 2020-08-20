@@ -9,49 +9,5 @@ section.feed-packs.section
             //section content
             .section__content.feed-packs__content
 
-                // single feed type
-                .feed-pack.feed-packs__elem
-
-                    //feed type description card
-                    .feed-pack__card.card.card--angled
-                        .feed-pack__content
-
-                            .feed-pack__suptitle
-                                p Сказочное заморское яство
-
-                            h2.feed-pack__title Нямушка
-                                p.feed-pack__subtitle
-                                    | с
-                                    span.feed-pack__type фуа-гра
-
-                            ul.feed-pack__features
-                                li.feed-pack__feature
-                                    strong 10
-                                    | порций
-                                li.feed-pack__feature мышь в подарок
-
-                            .feed-pack__weight
-                                span.feed-pack__weight-kg 0
-                                span.feed-pack__weight-g 5
-                                span.feed-pack__weight-units кг
-
-                    //feed pack order info
-                    .feed-pack__info
-
-                        //is visible by default
-                        .feed-pack__order-cta
-                            p
-                                | Чего сидишь? Порадуй котэ,
-                                button.order-cta-btn.btn.btn--inline(type="button") купи
-                                | .
-
-                        //is visible if pack is picked
-                        .feed-pack__picked-info
-                            p Печень утки разварная с артишоками.
-
-                        //is visible if pack is disabled
-                        .feed-pack__disabled-info
-                            p
-                                | Печалька, с
-                                span.feed-pack__type фуа-гра
-                                | закончился.
+                //single feed pack
+                include feed-packs/feed-pack-1
