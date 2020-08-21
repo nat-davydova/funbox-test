@@ -1,3 +1,18 @@
-.feedPacks {
+@import "media-q";
 
+.feedPacks {
+	display: flex;
+	align-items: stretch;
+	justify-content: space-around;
+	flex-wrap: wrap;
+}
+
+.feedPacks_elem {
+	width: 100%;
+	max-width: 320px;
+	margin: 0 0 20px;
+
+	@media (min-width: $mobile-width) {
+		margin: 0 20px 20px;
+	}
 }
