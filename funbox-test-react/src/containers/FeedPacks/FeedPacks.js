@@ -2,11 +2,15 @@ import React, { Component } from "react";
 
 import Section from "components/Section/Section";
 
+import { sectionConfig } from "./config";
+
 class FeedPacks extends Component {
   state = {};
 
   render() {
-    return <Section />;
+    const { title: sectionTitle } = sectionConfig;
+
+    return <Section title={sectionTitle} />;
   }
 }
 
