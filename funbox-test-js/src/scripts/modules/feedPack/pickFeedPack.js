@@ -39,5 +39,8 @@ export const pickFeedPack = pack => {
 
   packCard.addEventListener('mouseleave', () => {
     packCard.classList.remove('js-no-hover')
+  },
+  {
+    once: true
   })
 }
