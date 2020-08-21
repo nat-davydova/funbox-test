@@ -1,0 +1,19 @@
+@import "colors.scss";
+@import "typography.scss";
+
+.sectionHeader {
+	margin-bottom: 24px;
+
+	text-align: center;
+}
+
+.sectionTitle {
+	margin: 0;
+
+	font: {
+		family: $font-family--accent;
+		size: $font-size--xl;
+		weight: $font-weight--thin;
+	}
+	color: $font-color--light;
+}
