@@ -48,16 +48,22 @@ $card-accent--picked-hover: lighten($bg-color--accent-2, 7%);
 			0 0,
 			no-repeat;
 		}
+
+		&:not(.js-no-hover):hover {
+			.feed-pack__weight {
+				background-color: $card-accent--picked-hover;
+			}
+		}
+
+		&.js-no-hover:hover {
+			.feed-pack__weight {
+				background-color: $card-accent--picked;
+			}
+		}
 	}
 
 	.feed-pack__weight {
 		background-color: $card-accent--picked;
-	}
-
-	&:hover {
-		.feed-pack__weight {
-			background-color: $card-accent--picked-hover;
-		}
 	}
 }
 
