@@ -15,7 +15,7 @@ const unpickPack = (pack, ctaText, pickText) => {
   showElem(ctaText)
 }
 
-export const pickFeedPack = pack => {
+export const pickFeedPack = (pack, isCardClicked) => {
   // check if pack is disabled or not, if disabled - no picking allowed
   const packDisabledVal = pack.dataset.packDisabled
 
@@ -35,12 +35,14 @@ export const pickFeedPack = pack => {
     unpickPack(pack, packCTAtext, packPickedtext)
   }
 
-  packCard.classList.add('js-no-hover')
+  if (isCardClicked) {
+    packCard.classList.add('js-no-hover')
 
-  packCard.addEventListener('mouseleave', () => {
-    packCard.classList.remove('js-no-hover')
-  },
-  {
-    once: true
-  })
+    packCard.addEventListener('mouseleave', () => {
+      packCard.classList.remove('js-no-hover')
+    },
+    {
+      once: true
+    })
+  }
 }

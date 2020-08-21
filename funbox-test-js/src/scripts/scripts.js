@@ -1,3 +1,5 @@
+import 'element-closest/browser' // IE11 polyfill for 'closest'
+
 import {
   pickFeedPack,
   disableFeedPack
@@ -22,7 +24,8 @@ import { PATH } from './path'
     ) {
       const feedPackItem = target.closest(PATH.feedPack.pack)
 
-      pickFeedPack(feedPackItem)
+      // 2nd argument is passed to get sure if click directly on a card or not
+      pickFeedPack(feedPackItem, target.closest(PATH.feedPack.card))
     }
   })
 })()
