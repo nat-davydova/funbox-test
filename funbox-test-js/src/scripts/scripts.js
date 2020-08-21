@@ -1,4 +1,4 @@
-import { pickFeedPack } from './modules/feedPack'
+import { pickFeedPack } from './modules/feedPack/feedPack'
 
 import { PATH } from './path'
 

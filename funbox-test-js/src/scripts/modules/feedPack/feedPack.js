@@ -1,19 +1,16 @@
-import { hideElem, showElem } from '../utils'
+import { hideElem, showElem } from '../../utils'
+import * as packConsts from './consts'
 
-import { PATH } from '../path'
-
-const PACK_DISABLED_VAL = 'disabled'
-const PACK_PICKED_VAL = 'picked'
-const PACK_UNPICKED_VAL = ''
+import { PATH } from '../../path'
 
 const pickPack = (pack, ctaText, pickText) => {
-  pack.dataset.packPicked = PACK_PICKED_VAL
+  pack.dataset.packPicked = packConsts.PACK_PICKED_VAL
   hideElem(ctaText)
   showElem(pickText)
 }
 
 const unpickPack = (pack, ctaText, pickText) => {
-  pack.dataset.packPicked = PACK_UNPICKED_VAL
+  pack.dataset.packPicked = packConsts.PACK_UNPICKED_VAL
   hideElem(pickText)
   showElem(ctaText)
 }
@@ -22,7 +19,7 @@ export const pickFeedPack = pack => {
   // check if pack is disabled or not, if disabled - no picking allowed
   const packDisabledVal = pack.dataset.packDisabled
 
-  if (packDisabledVal === PACK_DISABLED_VAL) {
+  if (packDisabledVal === packConsts.PACK_DISABLED_VAL) {
     return
   }
 
@@ -32,7 +29,7 @@ export const pickFeedPack = pack => {
   const packPickedtext = pack.querySelector(PATH.feedPack.pickedText)
   const packCard = pack.querySelector(PATH.feedPack.card)
 
-  if (packPickedVal !== PACK_PICKED_VAL) {
+  if (packPickedVal !== packConsts.PACK_PICKED_VAL) {
     pickPack(pack, packCTAtext, packPickedtext)
   } else {
     unpickPack(pack, packCTAtext, packPickedtext)
