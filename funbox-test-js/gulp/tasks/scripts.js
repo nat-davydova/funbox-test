@@ -19,7 +19,16 @@ const scriptsDev = function () {
     entries: [path.src.scripts + jsDev]
   })
     .transform(babelify, {
-      presets: ['@babel/preset-env'],
+      presets: [
+        [
+          '@babel/preset-env',
+          {
+            useBuiltIns: 'usage', // alternative mode: "entry"
+            corejs: 3, // default would be 2
+            targets: '> 0.25%, IE 10'
+          }
+        ]
+      ],
       plugins: ['@babel/plugin-transform-runtime']
     })
     .bundle()

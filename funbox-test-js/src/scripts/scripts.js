@@ -1,3 +1,5 @@
+import 'element-closest/browser'
+
 import {
   pickFeedPack,
   disableFeedPack
