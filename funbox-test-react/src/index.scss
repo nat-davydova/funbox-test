@@ -1,1 +1,51 @@
 @import "~normalize-scss/sass/normalize/import-now";
+
+@import "assets/scss/colors";
+@import "assets/scss/typography";
+
+$font-color: $font-color--primary;
+$bg-color: $bg-color--primary;
+
+html,
+body {
+	min-height: 100vh;
+
+	font: {
+		family: $font-family--primary;
+		weight: $font-weight--primary;
+		size: $font-size--primary;
+	}
+	color: $font-color;
+	line-height: $line-height--primary;
+
+	background-color: $bg-color;
+
+	overflow-x: hidden;
+}
+
+body {
+	overflow-y: hidden;
+
+	a {
+		color: inherit;
+		text-decoration: none;
+	}
+
+	img {
+		max-width: 100%;
+		width: 100%;
+		height: auto;
+		display: block;
+	}
+
+	button {
+		font: {
+			family: inherit;
+			size: inherit;
+		}
+		line-height: inherit;
+		color: inherit;
+
+		cursor: pointer;
+	}
+}
