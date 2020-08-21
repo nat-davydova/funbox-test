@@ -16,6 +16,12 @@ $card-accent--picked-hover: lighten($bg-color--accent-2, 7%);
 							0 0,
 							no-repeat;
 		}
+
+		&:hover {
+			.feed-pack__weight {
+				background-color: $bg-color--disabled;
+			}
+		}
 	}
 
 	.feed-pack__weight {
@@ -31,12 +37,6 @@ $card-accent--picked-hover: lighten($bg-color--accent-2, 7%);
 	.feed-pack__subtitle,
 	.feed-pack__features {
 		color: $font-color--disabled;
-	}
-
-	&:hover {
-		.feed-pack__weight {
-			background-color: $bg-color--disabled;
-		}
 	}
 }
 
