@@ -1,5 +1,9 @@
 import React from "react";
 
-const section = ({ children }) => <section>{children}</section>;
+import styles from "./Section.module.scss";
+
+const section = ({ children }) => (
+  <section className={styles.section}>{children}</section>
+);
 
 export default section;
