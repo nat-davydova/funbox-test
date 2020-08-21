@@ -25,7 +25,7 @@ import { PATH } from './path'
       const feedPackItem = target.closest(PATH.feedPack.pack)
 
       // 2nd argument is passed to get sure if click directly on a card or not
-      pickFeedPack(feedPackItem, target.closest(PATH.feedPack.card))
+      pickFeedPack(feedPackItem)
     }
   })
 })()
