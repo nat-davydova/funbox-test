@@ -80,7 +80,7 @@ $card-accent--picked-hover: lighten($bg-color--accent-2, 7%);
 						no-repeat;
 	}
 
-	&:hover {
+	&:not(.js-no-hover):hover {
 
 		.feed-pack__weight {
 			background-color: $card-accent--default-hover;
