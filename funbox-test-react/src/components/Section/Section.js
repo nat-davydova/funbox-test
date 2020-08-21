@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 import SectionHeader from "./SectionHeader/SectionHeader";
 import Container from "components/Misc/Container/Container";
@@ -13,5 +14,10 @@ const section = ({ title, children }) => (
     </Container>
   </section>
 );
+
+section.propTypes = {
+  title: PropTypes.string,
+  children: PropTypes.object.isRequired
+};
 
 export default section;
