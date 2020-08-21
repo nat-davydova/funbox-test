@@ -30,10 +30,17 @@ export const pickFeedPack = pack => {
   const packPickedVal = pack.dataset.packPicked
   const packCTAtext = pack.querySelector(PATH.feedPack.ctaText)
   const packPickedtext = pack.querySelector(PATH.feedPack.pickedText)
+  const packCard = pack.querySelector(PATH.feedPack.card)
 
   if (packPickedVal !== PACK_PICKED_VAL) {
     pickPack(pack, packCTAtext, packPickedtext)
   } else {
     unpickPack(pack, packCTAtext, packPickedtext)
   }
+
+  packCard.classList.add('js-no-hover')
+
+  packCard.addEventListener('mouseleave', () => {
+    packCard.classList.remove('js-no-hover')
+  })
 }
