@@ -1,4 +1,4 @@
-import 'element-closest/browser'
+import 'element-closest/browser' // IE11 polyfill for 'closest'
 
 import {
   pickFeedPack,
