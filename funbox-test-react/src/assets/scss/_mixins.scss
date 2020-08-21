@@ -1,0 +1,14 @@
+@mixin transition-mix($property: all, $duration: .2s, $timing: linear, $delay: 0s) {
+	transition-property: $property;
+	transition-delay: $delay;
+	transition-timing-function: $timing;
+	transition-duration: $duration;
+}
+
+@mixin position-absolute($top: null, $bottom: null, $left: null, $right: null) {
+	position: absolute;
+	top: $top;
+	bottom: $bottom;
+	left: $left;
+	right: $right;
+}
