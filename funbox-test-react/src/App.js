@@ -1,13 +1,13 @@
 import React from "react";
 
-import FeedPacks from "./containers/FeedPacks/FeedPacks";
+import FeedPacksContainer from "./containers/FeedPacksContainer/FeedPacksContainer";
 
 import "./App.scss";
 
 function App() {
   return (
     <div className="App">
-      <FeedPacks />
+      <FeedPacksContainer />
     </div>
   );
 }
