@@ -1,6 +1,6 @@
 import {
   pickFeedPack,
-  disableFeedPack 
+  disableFeedPack
 } from './modules/feedPack/feedPack'
 
 import { PATH } from './path'
@@ -9,6 +9,10 @@ import { PATH } from './path'
   'use strict'
 
   // *** EVENT LISTENERS
+  document.addEventListener('DOMContentLoaded', () => {
+    disableFeedPack()
+  })
+
   document.body.addEventListener('click', e => {
     const target = e.target
 
