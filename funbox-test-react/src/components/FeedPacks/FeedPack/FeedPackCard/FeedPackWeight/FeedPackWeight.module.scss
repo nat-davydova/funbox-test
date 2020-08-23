@@ -1,0 +1,41 @@
+@import "colors";
+@import "mixins";
+@import "typography";
+
+.weight {
+	@include position-absolute($bottom: 10px, $right: 10px);
+	@include transition-mix();
+
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-wrap: wrap;
+	width: 80px;
+	height: 80px;
+
+	color: $font-color--light;
+	text-align: center;
+
+	background-color: $card-accent--default;
+	border-radius: 50%;
+
+	box-sizing: border-box;
+}
+
+.weight_num {
+	margin-bottom: -19px;
+
+	font: {
+		size: $font-size--xl-2;
+	}
+	line-height: 1;
+}
+
+.weight_units {
+	width: 100%;
+
+	font: {
+		size: $font-size--md-2 * .95;
+	}
+	line-height: 1;
+}
