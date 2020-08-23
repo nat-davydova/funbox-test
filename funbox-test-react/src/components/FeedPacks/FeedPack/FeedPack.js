@@ -18,7 +18,7 @@ const feedPack = ({ classes = "" }) => {
         descr: "порций"
       },
       {
-        val: false,
+        val: "",
         descr: "мышь в подарок"
       }
     ]
