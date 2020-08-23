@@ -3,8 +3,12 @@ import classnames from "classnames";
 
 import styles from "./Card.module.scss";
 
-const card = ({ isAngled = "false", children }) => {
-  const cardClassnames = classnames(styles.card, {
+const card = ({ isAngled = "false", classes = "", children }) => {
+  const { root } = classes;
+
+  console.log(classes);
+
+  const cardClassnames = classnames(styles.card, root, {
     [styles.cardIsAngled]: isAngled
   });
 

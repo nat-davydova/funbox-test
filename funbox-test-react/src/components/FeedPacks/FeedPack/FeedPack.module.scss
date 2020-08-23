@@ -1,0 +1,27 @@
+@import "colors";
+
+$card-accent--default: $bg-color--accent-1;
+$card-accent--default-hover: lighten($bg-color--accent-1, 7%);
+
+$card-accent--picked: $bg-color--accent-2;
+$card-accent--picked-hover: lighten($bg-color--accent-2, 7%);
+
+.card {
+	position: relative;
+
+	min-height: 480px;
+
+	&:before {
+		background:
+						linear-gradient(135deg, transparent 32px, $card-accent--default 0),
+						0 0,
+						no-repeat;
+	}
+
+	&:not(.js-no-hover):hover {
+
+		.weight {
+			background-color: $card-accent--default-hover;
+		}
+	}
+}

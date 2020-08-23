@@ -6,9 +6,21 @@ import styles from "./FeedPacks.module.scss";
 
 const feedPacks = props => (
   <div className={styles.feedPacks}>
-    <FeedPack />
-    <FeedPack />
-    <FeedPack />
+    <FeedPack
+      classes={{
+        root: styles.feedPacks_elem
+      }}
+    />
+    <FeedPack
+      classes={{
+        root: styles.feedPacks_elem
+      }}
+    />
+    <FeedPack
+      classes={{
+        root: styles.feedPacks_elem
+      }}
+    />
   </div>
 );
 
