@@ -3,6 +3,8 @@ import classnames from "classnames";
 
 import FeedPackCard from "./FeedPackCard/FeedPackCard";
 
+import CatImg from "assets/img/cat.png";
+
 const feedPack = ({ classes = "" }) => {
   const { root } = classes;
 
@@ -21,7 +23,11 @@ const feedPack = ({ classes = "" }) => {
         val: null,
         descr: "мышь в подарок"
       }
-    ]
+    ],
+    imgInfo: {
+      img: CatImg,
+      alt: "Фотография пушистого кота в ошейнике"
+    }
   };
 
   return (

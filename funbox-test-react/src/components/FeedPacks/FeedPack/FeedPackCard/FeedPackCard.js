@@ -10,7 +10,7 @@ import FeedPackImg from "./FeedPackImg/FeedPackImg";
 import styles from "./FeedPackCard.module.scss";
 
 const feedPackCard = ({ classes = "", config }) => {
-  const { suptitle, title, type, features } = config;
+  const { suptitle, title, type, features, imgInfo } = config;
 
   return (
     <Card
@@ -24,7 +24,7 @@ const feedPackCard = ({ classes = "", config }) => {
       <FeedPackTitle>{title}</FeedPackTitle>
       <FeedPackSubtitle>{type}</FeedPackSubtitle>
       <FeedPackFeatures features={features} />
-      <FeedPackImg />
+      <FeedPackImg imgInfo={imgInfo} />
     </Card>
   );
 };
