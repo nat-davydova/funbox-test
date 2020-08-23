@@ -1,0 +1,15 @@
+@import "colors";
+
+$card-border-offset: 4px;
+$card-border-radius: 12px;
+$card-bg-color: $bg-color--primary;
+
+.card {
+	position: relative;
+
+	background-color: $card-bg-color;
+	border-radius: $card-border-radius;
+
+	cursor: pointer;
+	z-index: 1;
+}

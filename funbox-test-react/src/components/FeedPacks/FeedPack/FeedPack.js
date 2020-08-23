@@ -1,5 +1,11 @@
 import React from "react";
 
-const feedPack = props => <article></article>;
+import Card from "components/Card/Card";
+
+const feedPack = props => (
+  <article>
+    <Card></Card>
+  </article>
+);
 
 export default feedPack;
