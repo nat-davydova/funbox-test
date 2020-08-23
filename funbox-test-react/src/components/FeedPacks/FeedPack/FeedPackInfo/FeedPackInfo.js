@@ -11,7 +11,7 @@ const feedPackInfo = ({ config }) => {
     infoComponentToRender = <CTAInfo />;
   }
 
-  return infoComponentToRender;
+  return <div>{infoComponentToRender}</div>;
 };
 
 export default feedPackInfo;

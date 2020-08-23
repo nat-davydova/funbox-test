@@ -1,5 +1,11 @@
 import React from "react";
 
-const ctaInfo = props => <div></div>;
+import Button from "components/Misc/Button/Button";
+
+const ctaInfo = props => (
+  <p>
+    Чего сидишь? Порадуй котэ, <Button>купи.</Button>
+  </p>
+);
 
 export default ctaInfo;
