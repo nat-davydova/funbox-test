@@ -1,10 +1,11 @@
 import React from "react";
 import classnames from "classnames";
+import PropTypes from "prop-types";
 
 import styles from "./Card.module.scss";
 
 const card = ({ isAngled = false, classes = "", children }) => {
-  const { root, content } = classes;
+  const { root = "", content = "" } = classes;
   const cardClassnames = classnames(styles.card, root, {
     [styles.cardIsAngled]: isAngled
   });
@@ -18,6 +19,15 @@ const card = ({ isAngled = false, classes = "", children }) => {
       <div className={cardInnerClassnames}>{children}</div>
     </div>
   );
+};
+
+card.propTypes = {
+  isAngled: PropTypes.bool,
+  classes: PropTypes.object,
+  children: PropTypes.oneOfType([
+    PropTypes.object.isRequired,
+    PropTypes.array.isRequired
+  ])
 };
 
 export default card;
