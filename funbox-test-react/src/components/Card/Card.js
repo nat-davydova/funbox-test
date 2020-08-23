@@ -5,9 +5,6 @@ import styles from "./Card.module.scss";
 
 const card = ({ isAngled = "false", classes = "", children }) => {
   const { root, content } = classes;
-
-  console.log(classes);
-
   const cardClassnames = classnames(styles.card, root, {
     [styles.cardIsAngled]: isAngled
   });
