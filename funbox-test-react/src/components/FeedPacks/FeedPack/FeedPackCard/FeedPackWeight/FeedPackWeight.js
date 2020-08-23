@@ -1,10 +1,14 @@
 import React from "react";
 import PropTypes from "prop-types";
+import classnames from "classnames";
 
 import styles from "./FeedPackWeight.module.scss";
 
-const feedPackWeight = ({ weightInfo }) => {
+const feedPackWeight = ({ classes = "", weightInfo }) => {
+  const { root = "" } = classes;
   const { weight, units } = weightInfo;
+
+  const weightClassnames = classnames(root, styles.weight);
 
   const transformedWeight = weight
     .toString()
@@ -12,7 +16,7 @@ const feedPackWeight = ({ weightInfo }) => {
     .join(",");
 
   return (
-    <div className={styles.weight}>
+    <div className={weightClassnames}>
       <span className={styles.weight_num}>{transformedWeight}</span>
       <span className={styles.weight_units}>{units}</span>
     </div>

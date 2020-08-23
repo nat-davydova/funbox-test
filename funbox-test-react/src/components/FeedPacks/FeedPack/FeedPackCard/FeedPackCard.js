@@ -36,7 +36,12 @@ const feedPackCard = ({ classes = "", config }) => {
       <FeedPackSubtitle>{type}</FeedPackSubtitle>
       <FeedPackFeatures features={features} />
       <FeedPackImg imgInfo={imgInfo} />
-      <FeedPackWeight weightInfo={weightInfo} />
+      <FeedPackWeight
+        classes={{
+          root: styles.weight
+        }}
+        weightInfo={weightInfo}
+      />
     </Card>
   );
 };

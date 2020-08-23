@@ -34,7 +34,7 @@ const feedPack = ({ classes = "" }) => {
       weight: 0.5,
       units: "кг"
     },
-    isPicked: true,
+    isPicked: false,
     isDisabled: false
   };
 
