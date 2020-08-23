@@ -1,3 +1,4 @@
+@import "colors";
 @import "typography";
 
 .title {
@@ -7,4 +8,8 @@
 		size: $font-size--xxl;
 		weight: $font-weight--bold;
 	}
+}
+
+.isDisabled {
+	color: $font-color--disabled;
 }

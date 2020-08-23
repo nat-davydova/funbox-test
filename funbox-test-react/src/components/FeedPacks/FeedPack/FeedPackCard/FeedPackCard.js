@@ -33,11 +33,11 @@ const feedPackCard = ({ classes = "", config }) => {
         isDisabled: isDisabled ? styles.isDisabled : ""
       }}
     >
-      <FeedPackSuptitle>{suptitle}</FeedPackSuptitle>
-      <FeedPackTitle>{title}</FeedPackTitle>
-      <FeedPackSubtitle>{type}</FeedPackSubtitle>
-      <FeedPackFeatures features={features} />
-      <FeedPackImg imgInfo={imgInfo} />
+      <FeedPackSuptitle isDisabled={isDisabled}>{suptitle}</FeedPackSuptitle>
+      <FeedPackTitle isDisabled={isDisabled}>{title}</FeedPackTitle>
+      <FeedPackSubtitle isDisabled={isDisabled}>{type}</FeedPackSubtitle>
+      <FeedPackFeatures isDisabled={isDisabled} features={features} />
+      <FeedPackImg isDisabled={isDisabled} imgInfo={imgInfo} />
       <FeedPackWeight
         classes={{
           root: styles.card_weight
