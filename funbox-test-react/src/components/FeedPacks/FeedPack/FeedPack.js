@@ -15,7 +15,8 @@ const feedPack = ({ classes = "" }) => {
       <Card
         isAngled
         classes={{
-          root: styles.feedPack_card
+          root: styles.feedPack_card,
+          inner: styles.feedPack__content
         }}
       ></Card>
     </article>

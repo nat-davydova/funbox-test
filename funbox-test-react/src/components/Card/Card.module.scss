@@ -33,3 +33,19 @@ $card-bg-color: $bg-color--primary;
 		z-index: -2;
 	}
 }
+
+.cardIsAngled_inner {
+	@include position-absolute($top: $card-border-offset, $left: $card-border-offset);
+
+	height: calc(100% - 2 * #{$card-border-offset});
+	width: calc(100% - 2 * #{$card-border-offset});
+
+	background:
+					linear-gradient(135deg, transparent 30px, $card-bg-color 0),
+					0 0,
+					no-repeat;
+	border-radius: $card-border-radius * .75;
+
+	overflow: hidden;
+	z-index: -1;
+}

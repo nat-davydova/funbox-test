@@ -4,7 +4,7 @@ import classnames from "classnames";
 import styles from "./Card.module.scss";
 
 const card = ({ isAngled = "false", classes = "", children }) => {
-  const { root } = classes;
+  const { root, inner } = classes;
 
   console.log(classes);
 
@@ -12,7 +12,15 @@ const card = ({ isAngled = "false", classes = "", children }) => {
     [styles.cardIsAngled]: isAngled
   });
 
-  return <div className={cardClassnames}>{children}</div>;
+  const cardInnerClassnames = classnames(inner, {
+    [styles.cardIsAngled_inner]: isAngled
+  });
+
+  return (
+    <div className={cardClassnames}>
+      <div className={cardInnerClassnames}>{children}</div>
+    </div>
+  );
 };
 
 export default card;
