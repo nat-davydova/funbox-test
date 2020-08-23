@@ -3,11 +3,12 @@ import React from "react";
 import Card from "components/Card/Card";
 import FeedPackSuptitle from "./FeedPackSuptitle/FeedPackSuptitle";
 import FeedPackTitle from "./FeedPackTitle/FeedPackTitle";
+import FeedPackSubtitle from "./FeedPackSubtitle/FeedPackSubtitle";
 
 import styles from "./FeedPackCard.module.scss";
 
 const feedPackCard = ({ classes = "", config }) => {
-  const { suptitle, title } = config;
+  const { suptitle, title, type } = config;
 
   return (
     <Card
@@ -19,6 +20,7 @@ const feedPackCard = ({ classes = "", config }) => {
     >
       <FeedPackSuptitle>{suptitle}</FeedPackSuptitle>
       <FeedPackTitle>{title}</FeedPackTitle>
+      <FeedPackSubtitle>{type}</FeedPackSubtitle>
     </Card>
   );
 };

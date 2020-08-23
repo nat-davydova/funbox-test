@@ -10,7 +10,8 @@ const feedPack = ({ classes = "" }) => {
 
   const tempConfig = {
     suptitle: "Сказочное заморское яство",
-    title: "Нямушка"
+    title: "Нямушка",
+    type: "с фуа-гра"
   };
 
   return (
