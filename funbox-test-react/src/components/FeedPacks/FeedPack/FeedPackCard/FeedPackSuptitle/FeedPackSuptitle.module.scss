@@ -1,0 +1,13 @@
+@import 'colors';
+@import 'typography';
+
+.suptitle {
+	font: {
+		size: $font-size--sm;
+	}
+	color: $font-color--secondary;
+
+	p {
+		margin: 0;
+	}
+}

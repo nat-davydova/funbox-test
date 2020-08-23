@@ -1,7 +1,9 @@
 import React from "react";
 
+import styles from "./FeedPackSuptitle.module.scss";
+
 const feedPackSuptitle = ({ children }) => (
-  <div>
+  <div className={styles.suptitle}>
     <p>{children}</p>
   </div>
 );
