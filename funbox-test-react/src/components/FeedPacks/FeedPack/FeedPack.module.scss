@@ -6,7 +6,7 @@ $card-accent--default-hover: lighten($bg-color--accent-1, 7%);
 $card-accent--picked: $bg-color--accent-2;
 $card-accent--picked-hover: lighten($bg-color--accent-2, 7%);
 
-.card {
+.feedPack_card {
 	position: relative;
 
 	min-height: 480px;
