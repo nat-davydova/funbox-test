@@ -5,8 +5,8 @@ import PropTypes from "prop-types";
 import styles from "./Card.module.scss";
 
 const card = ({ isAngled = false, classes = "", children }) => {
-  const { root = "", content = "", isPicked = "" } = classes;
-  const cardClassnames = classnames(styles.card, root, isPicked, {
+  const { root = "", content = "", isPicked = "", isDisabled = "" } = classes;
+  const cardClassnames = classnames(styles.card, root, isPicked, isDisabled, {
     [styles.cardIsAngled]: isAngled
   });
 

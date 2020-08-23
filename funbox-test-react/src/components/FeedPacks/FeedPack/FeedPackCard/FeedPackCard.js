@@ -19,7 +19,8 @@ const feedPackCard = ({ classes = "", config }) => {
     features,
     imgInfo,
     weightInfo,
-    isPicked
+    isPicked,
+    isDisabled
   } = config;
 
   return (
@@ -28,7 +29,8 @@ const feedPackCard = ({ classes = "", config }) => {
       classes={{
         root: styles.card,
         content: styles.content,
-        isPicked: isPicked ? styles.isPicked : ""
+        isPicked: isPicked ? styles.isPicked : "",
+        isDisabled: isDisabled ? styles.isDisabled : ""
       }}
     >
       <FeedPackSuptitle>{suptitle}</FeedPackSuptitle>

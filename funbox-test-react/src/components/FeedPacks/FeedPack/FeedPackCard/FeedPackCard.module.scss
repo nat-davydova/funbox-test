@@ -12,7 +12,7 @@
 						no-repeat;
 	}
 
-	&:not(.js-no-hover):hover {
+	&:hover {
 
 		.weight {
 			background-color: $card-accent--default-hover;
@@ -27,20 +27,37 @@
 		no-repeat;
 	}
 
-	&:not(.js-no-hover):hover {
-		.weight {
-			background-color: $card-accent--picked-hover;
-		}
-	}
-
-	&.js-no-hover:hover {
-		.weight {
-			background-color: $card-accent--picked;
-		}
-	}
+	//&:not(.js-no-hover):hover {
+	//	.weight {
+	//		background-color: $card-accent--picked-hover;
+	//	}
+	//}
+	//
+	//&.js-no-hover:hover {
+	//	.weight {
+	//		background-color: $card-accent--picked;
+	//	}
+	//}
 
 	.weight {
 		background-color: $card-accent--picked;
+	}
+}
+
+.isDisabled {
+	cursor: not-allowed;
+
+	&:before {
+		background:
+						linear-gradient(135deg, transparent 32px, $bg-color--disabled 0),
+						0 0,
+						no-repeat;
+	}
+
+	&:hover {
+		.weight {
+			background-color: $bg-color--disabled;
+		}
 	}
 }
 
