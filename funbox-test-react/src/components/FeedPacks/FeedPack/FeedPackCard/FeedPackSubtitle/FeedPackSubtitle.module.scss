@@ -1,0 +1,10 @@
+@import "typography";
+
+.subtitle {
+	margin: 0 0 0;
+
+	font: {
+		size: $font-size--md-2;
+		weight: $font-weight--bold;
+	}
+}
