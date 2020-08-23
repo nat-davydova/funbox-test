@@ -9,7 +9,8 @@ const feedPack = ({ classes = "" }) => {
   const packClassnames = classnames("feed-pack", root);
 
   const tempConfig = {
-    suptitle: "Сказочное заморское яство"
+    suptitle: "Сказочное заморское яство",
+    title: "Нямушка"
   };
 
   return (
