@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 import Card from "components/Card/Card";
 import FeedPackSuptitle from "./FeedPackSuptitle/FeedPackSuptitle";
@@ -29,6 +30,11 @@ const feedPackCard = ({ classes = "", config }) => {
       <FeedPackWeight weightInfo={weightInfo} />
     </Card>
   );
+};
+
+feedPackCard.propTypes = {
+  classes: PropTypes.object,
+  config: PropTypes.object.isRequired
 };
 
 export default feedPackCard;
