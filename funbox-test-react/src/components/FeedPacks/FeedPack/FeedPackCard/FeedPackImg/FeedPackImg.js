@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 import Img from "components/Misc/Img/Img";
 
@@ -16,6 +17,10 @@ const feedPackImg = ({ imgInfo }) => {
       alt={alt}
     />
   );
+};
+
+feedPackImg.propTypes = {
+  imgInfo: PropTypes.object.isRequired
 };
 
 export default feedPackImg;

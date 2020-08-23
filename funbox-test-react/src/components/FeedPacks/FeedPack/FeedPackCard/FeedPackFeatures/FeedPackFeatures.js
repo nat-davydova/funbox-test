@@ -1,5 +1,6 @@
 import React from "react";
 import { v4 as uuid } from "uuid";
+import PropTypes from "prop-types";
 
 import FeedPackFeature from "./FeedPackFeature/FeedPackFeature";
 

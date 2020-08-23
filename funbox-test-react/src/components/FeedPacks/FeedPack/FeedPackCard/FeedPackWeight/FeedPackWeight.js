@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 import styles from "./FeedPackWeight.module.scss";
 
@@ -16,6 +17,10 @@ const feedPackWeight = ({ weightInfo }) => {
       <span className={styles.weight_units}>{units}</span>
     </div>
   );
+};
+
+feedPackWeight.propTypes = {
+  weightInfo: PropTypes.object.isRequired
 };
 
 export default feedPackWeight;
