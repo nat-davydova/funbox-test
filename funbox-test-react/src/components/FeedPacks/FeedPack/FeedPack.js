@@ -31,7 +31,9 @@ const feedPack = ({ classes = "" }) => {
     weightInfo: {
       weight: 0.5,
       units: "кг"
-    }
+    },
+    isChecked: false,
+    isDisabled: false
   };
 
   return (
