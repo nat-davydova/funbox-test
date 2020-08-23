@@ -8,9 +8,13 @@ const feedPack = ({ classes = "" }) => {
 
   const packClassnames = classnames("feed-pack", root);
 
+  const tempConfig = {
+    suptitle: "Сказочное заморское яство"
+  };
+
   return (
     <article className={packClassnames}>
-      <FeedPackCard />
+      <FeedPackCard config={tempConfig} />
     </article>
   );
 };
