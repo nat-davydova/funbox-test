@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 import CTAInfo from "./CTAInfo/CTAInfo";
 import CheckedInfo from "./CheckedInfo/CheckedInfo";
@@ -20,6 +21,10 @@ const feedPackInfo = ({ config }) => {
   }
 
   return <div className={styles.info}>{infoComponentToRender}</div>;
+};
+
+feedPackInfo.propTypes = {
+  config: PropTypes.object.isRequired
 };
 
 export default feedPackInfo;
