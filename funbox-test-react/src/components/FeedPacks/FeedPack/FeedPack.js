@@ -27,6 +27,10 @@ const feedPack = ({ classes = "" }) => {
     imgInfo: {
       img: CatImg,
       alt: "Фотография пушистого кота в ошейнике"
+    },
+    weightInfo: {
+      weight: 0.5,
+      units: "кг"
     }
   };
 

@@ -6,11 +6,12 @@ import FeedPackTitle from "./FeedPackTitle/FeedPackTitle";
 import FeedPackSubtitle from "./FeedPackSubtitle/FeedPackSubtitle";
 import FeedPackFeatures from "./FeedPackFeatures/FeedPackFeatures";
 import FeedPackImg from "./FeedPackImg/FeedPackImg";
+import FeedPackWeight from "./FeedPackWeight/FeedPackWeight";
 
 import styles from "./FeedPackCard.module.scss";
 
 const feedPackCard = ({ classes = "", config }) => {
-  const { suptitle, title, type, features, imgInfo } = config;
+  const { suptitle, title, type, features, imgInfo, weightInfo } = config;
 
   return (
     <Card
@@ -25,6 +26,7 @@ const feedPackCard = ({ classes = "", config }) => {
       <FeedPackSubtitle>{type}</FeedPackSubtitle>
       <FeedPackFeatures features={features} />
       <FeedPackImg imgInfo={imgInfo} />
+      <FeedPackWeight weightInfo={weightInfo} />
     </Card>
   );
 };
