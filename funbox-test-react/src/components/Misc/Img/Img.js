@@ -1,12 +1,15 @@
 import React from "react";
+import classnames from "classnames";
 import PropTypes from "prop-types";
 
 const img = ({ img, alt, classes = "" }) => {
-  const { root = "", imgClass = "" } = classes;
+  const { root = "", isDisabled = "" } = classes;
+
+  const imgClassnames = classnames(root, isDisabled);
 
   return (
-    <div className={root}>
-      <img className={imgClass} src={img} alt={alt} />
+    <div className={imgClassnames}>
+      <img src={img} alt={alt} />
     </div>
   );
 };

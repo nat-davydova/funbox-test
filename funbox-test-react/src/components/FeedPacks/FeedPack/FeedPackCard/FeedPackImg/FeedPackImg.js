@@ -5,13 +5,14 @@ import Img from "components/Misc/Img/Img";
 
 import styles from "./FeedPackImg.module.scss";
 
-const feedPackImg = ({ imgInfo }) => {
+const feedPackImg = ({ isDisabled, imgInfo }) => {
   const { img, alt } = imgInfo;
 
   return (
     <Img
       classes={{
-        root: styles.img
+        root: styles.img,
+        isDisabled: isDisabled ? styles.isDisabled : null
       }}
       img={img}
       alt={alt}
@@ -20,7 +21,8 @@ const feedPackImg = ({ imgInfo }) => {
 };
 
 feedPackImg.propTypes = {
-  imgInfo: PropTypes.object.isRequired
+  imgInfo: PropTypes.object.isRequired,
+  isDisabled: PropTypes.bool
 };
 
 export default feedPackImg;
