@@ -1,4 +1,5 @@
 @import "colors";
+@import "mixins";
 
 $card-border-offset: 4px;
 $card-border-radius: 12px;
@@ -12,4 +13,23 @@ $card-bg-color: $bg-color--primary;
 
 	cursor: pointer;
 	z-index: 1;
+}
+
+.cardIsAngled {
+	background-color: transparent;
+	border: none;
+
+	&:before {
+		@include position-absolute($top: 0, $left: 0);
+
+		display: block;
+		height: 100%;
+		width: 100%;
+
+		content: '';
+
+		border-radius: inherit;
+
+		z-index: -2;
+	}
 }

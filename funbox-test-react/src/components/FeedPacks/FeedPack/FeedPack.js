@@ -4,7 +4,7 @@ import Card from "components/Card/Card";
 
 const feedPack = props => (
   <article>
-    <Card></Card>
+    <Card isAngled></Card>
   </article>
 );
 
