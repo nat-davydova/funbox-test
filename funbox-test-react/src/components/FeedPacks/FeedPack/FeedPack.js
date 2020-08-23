@@ -15,6 +15,7 @@ const feedPack = ({ classes = "" }) => {
     suptitle: "Сказочное заморское яство",
     title: "Нямушка",
     type: "с фуа-гра",
+    descr: "Печень утки разварная с артишоками.",
     features: [
       {
         val: 10,
