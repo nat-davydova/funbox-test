@@ -2,11 +2,12 @@ import React from "react";
 
 import CTAInfo from "./CTAInfo/CTAInfo";
 import CheckedInfo from "./CheckedInfo/CheckedInfo";
+import DisabledInfo from "./DisabledInfo/DisabledInfo";
 
 import styles from "./FeedPackInfo.module.scss";
 
 const feedPackInfo = ({ config }) => {
-  const { descr, isChecked, isDisabled } = config;
+  const { type, descr, isChecked, isDisabled } = config;
 
   let infoComponentToRender;
 
@@ -14,6 +15,8 @@ const feedPackInfo = ({ config }) => {
     infoComponentToRender = <CTAInfo />;
   } else if (isChecked && !isDisabled) {
     infoComponentToRender = <CheckedInfo descr={descr} />;
+  } else if (isDisabled) {
+    infoComponentToRender = <DisabledInfo type={type} />;
   }
 
   return <div className={styles.info}>{infoComponentToRender}</div>;
