@@ -1,10 +1,10 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const checkedInfo = ({ descr }) => <p>{descr}</p>;
+const pickedInfo = ({ descr }) => <p>{descr}</p>;
 
-checkedInfo.propTypes = {
+pickedInfo.propTypes = {
   descr: PropTypes.string.isRequired
 };
 
-export default checkedInfo;
+export default pickedInfo;

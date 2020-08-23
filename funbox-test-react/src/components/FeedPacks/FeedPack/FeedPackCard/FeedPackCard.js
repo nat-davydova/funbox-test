@@ -12,14 +12,23 @@ import FeedPackWeight from "./FeedPackWeight/FeedPackWeight";
 import styles from "./FeedPackCard.module.scss";
 
 const feedPackCard = ({ classes = "", config }) => {
-  const { suptitle, title, type, features, imgInfo, weightInfo } = config;
+  const {
+    suptitle,
+    title,
+    type,
+    features,
+    imgInfo,
+    weightInfo,
+    isPicked
+  } = config;
 
   return (
     <Card
       isAngled
       classes={{
-        root: styles.feedPack_card,
-        content: styles.feedPack_content
+        root: styles.card,
+        content: styles.content,
+        isPicked: isPicked ? styles.isPicked : ""
       }}
     >
       <FeedPackSuptitle>{suptitle}</FeedPackSuptitle>

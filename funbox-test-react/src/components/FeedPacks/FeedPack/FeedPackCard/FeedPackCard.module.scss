@@ -1,6 +1,6 @@
 @import "colors";
 
-.feedPack_card {
+.card {
 	position: relative;
 
 	min-height: 480px;
@@ -20,7 +20,31 @@
 	}
 }
 
-.feedPack_content {
+.isPicked {
+	&:before {
+		background: linear-gradient(135deg, transparent 32px, $card-accent--picked 0),
+		0 0,
+		no-repeat;
+	}
+
+	&:not(.js-no-hover):hover {
+		.weight {
+			background-color: $card-accent--picked-hover;
+		}
+	}
+
+	&.js-no-hover:hover {
+		.weight {
+			background-color: $card-accent--picked;
+		}
+	}
+
+	.weight {
+		background-color: $card-accent--picked;
+	}
+}
+
+.content {
 	padding: 20px 10px 10px 47px;
 
 	box-sizing: border-box;
