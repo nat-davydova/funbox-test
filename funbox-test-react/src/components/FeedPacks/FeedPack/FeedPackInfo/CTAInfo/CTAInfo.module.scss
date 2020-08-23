@@ -1,0 +1,19 @@
+@import "colors";
+
+.ctaInfo_btn {
+	padding-top: 0;
+	padding-bottom: 0;
+
+	color: $card-accent--default;
+
+	border: none;
+	background-color: transparent;
+
+	span {
+		border-bottom: 1px dashed currentColor;
+	}
+
+	&:after {
+		content: '.';
+	}
+}

@@ -1,5 +1,13 @@
 import React from "react";
 
-const button = ({ children }) => <button>{children}</button>;
+const button = ({ classes = "", children }) => {
+  const { root = "" } = classes;
+
+  return (
+    <button className={root}>
+      <span>{children}</span>
+    </button>
+  );
+};
 
 export default button;
