@@ -1,0 +1,10 @@
+@import "typography";
+
+.title {
+	margin: 5px 0 0;
+
+	font: {
+		size: $font-size--xxl;
+		weight: $font-weight--bold;
+	}
+}

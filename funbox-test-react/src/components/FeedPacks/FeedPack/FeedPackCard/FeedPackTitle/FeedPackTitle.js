@@ -1,5 +1,9 @@
 import React from "react";
 
-const feedPackTitle = ({ children }) => <h2>{children}</h2>;
+import styles from "./FeedPackTitle.module.scss";
+
+const feedPackTitle = ({ children }) => (
+  <h2 className={styles.title}>{children}</h2>
+);
 
 export default feedPackTitle;
