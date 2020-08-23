@@ -2,6 +2,8 @@ import React from "react";
 
 import CTAInfo from "./CTAInfo/CTAInfo";
 
+import styles from "./FeedPackInfo.module.scss";
+
 const feedPackInfo = ({ config }) => {
   const { type, isChecked, isDisabled } = config;
 
@@ -11,7 +13,7 @@ const feedPackInfo = ({ config }) => {
     infoComponentToRender = <CTAInfo />;
   }
 
-  return <div>{infoComponentToRender}</div>;
+  return <div className={styles.info}>{infoComponentToRender}</div>;
 };
 
 export default feedPackInfo;
