@@ -1,0 +1,27 @@
+@import "colors";
+
+.feedPack_card {
+	position: relative;
+
+	min-height: 480px;
+
+	&:before {
+		background:
+						linear-gradient(135deg, transparent 32px, $card-accent--default 0),
+						0 0,
+						no-repeat;
+	}
+
+	&:not(.js-no-hover):hover {
+
+		.weight {
+			background-color: $card-accent--default-hover;
+		}
+	}
+}
+
+.feedPack_content {
+	padding: 20px 10px 10px 47px;
+
+	box-sizing: border-box;
+}

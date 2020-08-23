@@ -27,3 +27,8 @@ $font-color--accent-1: $_water-blue;
 $font-color--accent-2: $_canary-yellow;
 $font-color--disabled: $_light-grey;
 
+$card-accent--default: $bg-color--accent-1;
+$card-accent--default-hover: lighten($bg-color--accent-1, 7%);
+
+$card-accent--picked: $bg-color--accent-2;
+$card-accent--picked-hover: lighten($bg-color--accent-2, 7%);

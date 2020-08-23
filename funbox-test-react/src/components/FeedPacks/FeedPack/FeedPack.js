@@ -1,9 +1,7 @@
 import React from "react";
 import classnames from "classnames";
 
-import Card from "components/Card/Card";
-
-import styles from "./FeedPack.module.scss";
+import FeedPackCard from "./FeedPackCard/FeedPackCard";
 
 const feedPack = ({ classes = "" }) => {
   const { root } = classes;
@@ -12,13 +10,7 @@ const feedPack = ({ classes = "" }) => {
 
   return (
     <article className={packClassnames}>
-      <Card
-        isAngled
-        classes={{
-          root: styles.feedPack_card,
-          inner: styles.feedPack__content
-        }}
-      ></Card>
+      <FeedPackCard />
     </article>
   );
 };
