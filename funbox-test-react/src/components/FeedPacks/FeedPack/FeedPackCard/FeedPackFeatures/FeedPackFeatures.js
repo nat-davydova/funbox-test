@@ -14,4 +14,8 @@ const feedPackFeatures = ({ features }) => {
   return <ul className={styles.features}>{featuresArr}</ul>;
 };
 
+feedPackFeatures.propTypes = {
+  features: PropTypes.array.isRequired
+};
+
 export default feedPackFeatures;
