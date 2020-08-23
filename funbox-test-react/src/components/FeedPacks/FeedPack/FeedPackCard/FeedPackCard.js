@@ -40,7 +40,7 @@ const feedPackCard = ({ classes = "", config }) => {
       <FeedPackImg imgInfo={imgInfo} />
       <FeedPackWeight
         classes={{
-          root: styles.weight
+          root: styles.card_weight
         }}
         weightInfo={weightInfo}
       />

@@ -14,7 +14,7 @@
 
 	&:hover {
 
-		.weight {
+		.card_weight {
 			background-color: $card-accent--default-hover;
 		}
 	}
@@ -39,7 +39,7 @@
 	//	}
 	//}
 
-	.weight {
+	.card_weight {
 		background-color: $card-accent--picked;
 	}
 }
@@ -55,9 +55,13 @@
 	}
 
 	&:hover {
-		.weight {
+		.card_weight {
 			background-color: $bg-color--disabled;
 		}
+	}
+
+	.card_weight {
+		background-color: $bg-color--disabled;
 	}
 }
 
