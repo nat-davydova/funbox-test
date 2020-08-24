@@ -5,6 +5,7 @@ import Section from "components/Section/Section";
 import FeedPacks from "components/FeedPacks/FeedPacks";
 
 import { sectionConfig } from "./config";
+import * as actionTypes from "store/actions/actionTypes";
 
 class FeedPacksContainer extends Component {
   state = {};
@@ -26,4 +27,11 @@ const mapStateToProps = state => {
   };
 };
 
-export default connect(mapStateToProps)(FeedPacksContainer);
+const mapDispatchToProps = dispatch => {
+  return {
+    onChangePickingPack: () =>
+      dispatch({ type: actionTypes.CHANGE_PICKING_STATE })
+  };
+};
+
+export default connect(mapStateToProps, mapDispatchToProps)(FeedPacksContainer);
