@@ -4,7 +4,7 @@ import FeedPack from "./FeedPack/FeedPack";
 
 import styles from "./FeedPacks.module.scss";
 
-const feedPacks = ({ feedPacks }) => {
+const feedPacks = ({ feedPacks, clicked }) => {
   const feedPacksArr = feedPacks.map(elem => {
     return (
       <FeedPack
@@ -17,7 +17,11 @@ const feedPacks = ({ feedPacks }) => {
     );
   });
 
-  return <div className={styles.feedPacks}>{feedPacksArr}</div>;
+  return (
+    <div onClick={clicked} className={styles.feedPacks}>
+      {feedPacksArr}
+    </div>
+  );
 };
 
 export default feedPacks;

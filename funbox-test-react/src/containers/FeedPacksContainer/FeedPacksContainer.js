@@ -15,7 +15,10 @@ class FeedPacksContainer extends Component {
 
     return (
       <Section title={sectionTitle}>
-        <FeedPacks feedPacks={this.props.feedPacks} />
+        <FeedPacks
+          feedPacks={this.props.feedPacks}
+          clicked={this.props.onChangePickingPack}
+        />
       </Section>
     );
   }
