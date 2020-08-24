@@ -21,18 +21,19 @@
 }
 
 .isPicked {
+
 	&:before {
 		background: linear-gradient(135deg, transparent 32px, $card-accent--picked 0),
 		0 0,
 		no-repeat;
 	}
 
-	//&:not(.js-no-hover):hover {
-	//	.weight {
-	//		background-color: $card-accent--picked-hover;
-	//	}
-	//}
-	//
+	&:hover {
+		.card_weight {
+			background-color: $card-accent--picked-hover;
+		}
+	}
+
 	//&.js-no-hover:hover {
 	//	.weight {
 	//		background-color: $card-accent--picked;
