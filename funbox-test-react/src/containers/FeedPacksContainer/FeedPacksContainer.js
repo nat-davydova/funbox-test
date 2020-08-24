@@ -14,10 +14,16 @@ class FeedPacksContainer extends Component {
 
     return (
       <Section title={sectionTitle}>
-        <FeedPacks />
+        <FeedPacks feedPacks={this.props.feedPacks} />
       </Section>
     );
   }
 }
 
-export default connect()(FeedPacksContainer);
+const mapStateToProps = state => {
+  return {
+    feedPacks: state.feedPacks
+  };
+};
+
+export default connect(mapStateToProps)(FeedPacksContainer);

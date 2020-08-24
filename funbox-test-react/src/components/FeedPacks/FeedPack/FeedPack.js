@@ -4,14 +4,17 @@ import classnames from "classnames";
 import FeedPackCard from "./FeedPackCard/FeedPackCard";
 import FeedPackInfo from "./FeedPackInfo/FeedPackInfo";
 
-import CatImg from "assets/img/cat.png";
-
-const feedPack = ({ classes = "" }) => {
+const feedPack = ({ classes = "", config }) => {
   const { root } = classes;
 
   const packClassnames = classnames("feed-pack", root);
 
-  return <article className={packClassnames}></article>;
+  return (
+    <article className={packClassnames}>
+      {/*<FeedPackCard config={config} />*/}
+      {/*<FeedPackInfo config={config} />*/}
+    </article>
+  );
 };
 
 export default feedPack;
