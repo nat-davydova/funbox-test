@@ -95,17 +95,14 @@ $card-accent--picked-hover: lighten($bg-color--accent-2, 7%);
 }
 
 .feed-pack__suptitle {
-
-	p {
-		margin: 0;
-	}
-}
-
-.feed-pack__suptitle {
 	font: {
 		size: $font-size--sm;
 	}
 	color: $font-color--secondary;
+
+	p {
+		margin: 0;
+	}
 }
 
 .feed-pack__title {
