@@ -13,15 +13,12 @@ const feedPacks = ({ feedPacks, clicked }) => {
           root: styles.feedPacks_elem
         }}
         config={elem}
+        clicked={clicked}
       />
     );
   });
 
-  return (
-    <div onClick={clicked} className={styles.feedPacks}>
-      {feedPacksArr}
-    </div>
-  );
+  return <div className={styles.feedPacks}>{feedPacksArr}</div>;
 };
 
 export default feedPacks;

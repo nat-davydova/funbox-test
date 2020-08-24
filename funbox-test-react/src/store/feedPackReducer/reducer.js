@@ -9,7 +9,7 @@ const initState = {
 const reducer = (state = initState, action) => {
   switch (action.type) {
     case actionTypes.CHANGE_PICKING_STATE:
-      console.log("click!");
+      console.log(action.id);
       return state;
     default:
       return state;

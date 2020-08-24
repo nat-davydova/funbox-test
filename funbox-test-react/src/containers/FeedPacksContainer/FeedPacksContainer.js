@@ -32,8 +32,8 @@ const mapStateToProps = state => {
 
 const mapDispatchToProps = dispatch => {
   return {
-    onChangePickingPack: () =>
-      dispatch({ type: actionTypes.CHANGE_PICKING_STATE })
+    onChangePickingPack: id =>
+      dispatch({ type: actionTypes.CHANGE_PICKING_STATE, id: id })
   };
 };
 
