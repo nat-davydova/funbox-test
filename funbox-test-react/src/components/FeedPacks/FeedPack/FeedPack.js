@@ -11,8 +11,8 @@ const feedPack = ({ classes = "", config }) => {
 
   return (
     <article className={packClassnames}>
-      {/*<FeedPackCard config={config} />*/}
-      {/*<FeedPackInfo config={config} />*/}
+      <FeedPackCard config={config} />
+      <FeedPackInfo config={config} />
     </article>
   );
 };
