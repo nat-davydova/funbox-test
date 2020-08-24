@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import { connect } from "react-redux";
 
 import Section from "components/Section/Section";
 import FeedPacks from "components/FeedPacks/FeedPacks";
@@ -19,4 +20,4 @@ class FeedPacksContainer extends Component {
   }
 }
 
-export default FeedPacksContainer;
+export default connect()(FeedPacksContainer);
