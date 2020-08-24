@@ -5,7 +5,7 @@ import Section from "components/Section/Section";
 import FeedPacks from "components/FeedPacks/FeedPacks";
 
 import { sectionConfig } from "./config";
-import * as actionTypes from "store/actions/actionTypes";
+import * as actionTypes from "store/actions/actions";
 
 class FeedPacksContainer extends Component {
   state = {};
