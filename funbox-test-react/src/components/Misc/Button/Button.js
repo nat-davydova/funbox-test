@@ -1,11 +1,11 @@
 import React from "react";
 import PropTypes from "prop-types";
 
-const button = ({ classes = "", children }) => {
+const button = ({ classes = "", children, clicked }) => {
   const { root = "" } = classes;
 
   return (
-    <button className={root}>
+    <button className={root} onClick={clicked}>
       <span>{children}</span>
     </button>
   );

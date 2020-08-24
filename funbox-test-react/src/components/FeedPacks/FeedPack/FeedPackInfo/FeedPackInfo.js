@@ -7,13 +7,13 @@ import DisabledInfo from "./DisabledInfo/DisabledInfo";
 
 import styles from "./FeedPackInfo.module.scss";
 
-const feedPackInfo = ({ config }) => {
-  const { type, descr, isPicked, isDisabled } = config;
+const feedPackInfo = ({ config, clicked }) => {
+  const { type, descr, isPicked, isDisabled, id } = config;
 
   let infoComponentToRender;
 
   if (!isPicked && !isDisabled) {
-    infoComponentToRender = <CTAInfo />;
+    infoComponentToRender = <CTAInfo clicked={() => clicked(id)} />;
   } else if (isPicked && !isDisabled) {
     infoComponentToRender = <PickedInfo descr={descr} />;
   } else if (isDisabled) {
