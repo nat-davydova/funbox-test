@@ -17,16 +17,13 @@ $card-bg-color: $bg-color--primary;
 	border: none;
 
 	&:before {
-		display: block;
-
-		content: '';
-	}
-
-	&:before {
 		@include position-absolute($top: 0, $left: 0);
 
+		display: block;
 		height: 100%;
 		width: 100%;
+
+		content: '';
 
 		border-radius: inherit;
 
