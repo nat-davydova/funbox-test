@@ -4,13 +4,7 @@ import PropTypes from "prop-types";
 
 import styles from "./Card.module.scss";
 
-const card = ({
-  isAngled = false,
-  classes = "",
-  children,
-  clicked,
-  withId
-}) => {
+const card = ({ isAngled = false, classes = "", children, clicked }) => {
   const { root = "", content = "", isPicked = "", isDisabled = "" } = classes;
   const cardClassnames = classnames(styles.card, root, isPicked, isDisabled, {
     [styles.cardIsAngled]: isAngled
@@ -21,7 +15,7 @@ const card = ({
   });
 
   return (
-    <div className={cardClassnames} onClick={() => clicked(withId)}>
+    <div className={cardClassnames} onClick={clicked}>
       <div className={cardInnerClassnames}>{children}</div>
     </div>
   );

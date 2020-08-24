@@ -33,8 +33,7 @@ const feedPackCard = ({ classes = "", config, clicked }) => {
         isPicked: isPicked ? styles.isPicked : "",
         isDisabled: isDisabled ? styles.isDisabled : ""
       }}
-      clicked={clicked}
-      withId={id}
+      clicked={() => clicked(id)}
     >
       <FeedPackSuptitle isDisabled={isDisabled}>{suptitle}</FeedPackSuptitle>
       <FeedPackTitle isDisabled={isDisabled}>{title}</FeedPackTitle>
