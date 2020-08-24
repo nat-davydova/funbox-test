@@ -8,6 +8,7 @@ const feedPacks = ({ feedPacks }) => {
   const feedPacksArr = feedPacks.map(elem => {
     return (
       <FeedPack
+        key={elem.id}
         classes={{
           root: styles.feedPacks_elem
         }}

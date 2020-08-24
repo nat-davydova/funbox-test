@@ -1,7 +1,10 @@
+import { v4 as uuid } from "uuid";
+
 import CatImg from "../../assets/img/cat.png";
 
 export const feedPacksConfig = [
   {
+    id: uuid(),
     suptitle: "Сказочное заморское яство",
     title: "Нямушка",
     type: "с фуа-гра",
@@ -28,6 +31,7 @@ export const feedPacksConfig = [
     isDisabled: false
   },
   {
+    id: uuid(),
     suptitle: "Сказочное заморское яство",
     title: "Нямушка",
     type: "с рыбой",
@@ -54,6 +58,7 @@ export const feedPacksConfig = [
     isDisabled: false
   },
   {
+    id: uuid(),
     suptitle: "Сказочное заморское яство",
     title: "Нямушка",
     type: "с курой",

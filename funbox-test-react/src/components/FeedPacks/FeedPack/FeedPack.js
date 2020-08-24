@@ -10,7 +10,7 @@ const feedPack = ({ classes = "", config }) => {
   const packClassnames = classnames("feed-pack", root);
 
   return (
-    <article className={packClassnames}>
+    <article className={packClassnames} id={config.id}>
       <FeedPackCard config={config} />
       <FeedPackInfo config={config} />
     </article>
