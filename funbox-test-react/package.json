@@ -1,5 +1,6 @@
 {
   "name": "funbox-test-react",
+  "homepage": "https://eisenpar.com/funbox-test-react/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
