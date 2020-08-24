@@ -1,4 +1,5 @@
 import React from "react";
+import PropTypes from "prop-types";
 
 import FeedPack from "./FeedPack/FeedPack";
 
@@ -19,6 +20,11 @@ const feedPacks = ({ feedPacks, clicked }) => {
   });
 
   return <div className={styles.feedPacks}>{feedPacksArr}</div>;
+};
+
+feedPacks.propTypes = {
+  feedPacks: PropTypes.array.isRequired,
+  clicked: PropTypes.func.isRequired
 };
 
 export default feedPacks;

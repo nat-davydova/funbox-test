@@ -24,7 +24,8 @@ const feedPackInfo = ({ config, clicked }) => {
 };
 
 feedPackInfo.propTypes = {
-  config: PropTypes.object.isRequired
+  config: PropTypes.object.isRequired,
+  clicked: PropTypes.func.isRequired
 };
 
 export default feedPackInfo;

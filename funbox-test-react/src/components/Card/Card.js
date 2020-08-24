@@ -27,7 +27,8 @@ card.propTypes = {
   children: PropTypes.oneOfType([
     PropTypes.object.isRequired,
     PropTypes.array.isRequired
-  ])
+  ]),
+  clicked: PropTypes.func.isRequired
 };
 
 export default card;

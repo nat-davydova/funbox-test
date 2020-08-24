@@ -13,7 +13,8 @@ const button = ({ classes = "", children, clicked }) => {
 
 button.propTypes = {
   classes: PropTypes.object,
-  children: PropTypes.string.isRequired
+  children: PropTypes.string.isRequired,
+  clicked: PropTypes.func.isRequired
 };
 
 export default button;

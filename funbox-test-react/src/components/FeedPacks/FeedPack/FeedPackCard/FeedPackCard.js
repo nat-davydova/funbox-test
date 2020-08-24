@@ -52,7 +52,8 @@ const feedPackCard = ({ classes = "", config, clicked }) => {
 
 feedPackCard.propTypes = {
   classes: PropTypes.object,
-  config: PropTypes.object.isRequired
+  config: PropTypes.object.isRequired,
+  clicked: PropTypes.func.isRequired
 };
 
 export default feedPackCard;
