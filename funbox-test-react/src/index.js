@@ -5,7 +5,7 @@ import { Provider } from "react-redux";
 
 import App from "./App";
 
-import reducer from "./store/reducer";
+import reducer from "./store/feedPackReducer/reducer";
 
 import "./index.scss";
 
