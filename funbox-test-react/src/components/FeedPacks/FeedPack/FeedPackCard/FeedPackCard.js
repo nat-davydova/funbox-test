@@ -11,7 +11,7 @@ import FeedPackWeight from "./FeedPackWeight/FeedPackWeight";
 
 import styles from "./FeedPackCard.module.scss";
 
-const feedPackCard = ({ classes = "", config }) => {
+const feedPackCard = ({ classes = "", config, clicked }) => {
   const {
     suptitle,
     title,
@@ -20,7 +20,8 @@ const feedPackCard = ({ classes = "", config }) => {
     imgInfo,
     weightInfo,
     isPicked,
-    isDisabled
+    isDisabled,
+    id
   } = config;
 
   return (
@@ -32,6 +33,8 @@ const feedPackCard = ({ classes = "", config }) => {
         isPicked: isPicked ? styles.isPicked : "",
         isDisabled: isDisabled ? styles.isDisabled : ""
       }}
+      clicked={clicked}
+      withId={id}
     >
       <FeedPackSuptitle isDisabled={isDisabled}>{suptitle}</FeedPackSuptitle>
       <FeedPackTitle isDisabled={isDisabled}>{title}</FeedPackTitle>

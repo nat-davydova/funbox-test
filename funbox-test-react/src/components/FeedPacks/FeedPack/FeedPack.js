@@ -10,13 +10,9 @@ const feedPack = ({ classes = "", config, clicked }) => {
   const packClassnames = classnames("feed-pack", root);
 
   return (
-    <article
-      className={packClassnames}
-      id={config.id}
-      onClick={() => clicked(config.id)}
-    >
-      <FeedPackCard config={config} />
-      <FeedPackInfo config={config} />
+    <article className={packClassnames} id={config.id}>
+      <FeedPackCard config={config} clicked={clicked} />
+      <FeedPackInfo config={config} clicked={clicked} />
     </article>
   );
 };
